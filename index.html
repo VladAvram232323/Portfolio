@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
+    <link rel="manifest" href="/images/site.webmanifest" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <title>Vlad Avram</title>
+  </head>
+  <body>
+    <header>
+      <!-- NAVBAR -->
+      <nav class="navbar container">
+        <div class="navbar__logo">Vlad Avram</div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- LANDING PAGE -->
+      <section class="landing container">
+        <div class="info">
+          <h1 class="landing__title">
+            I'm a self-taught frontend developer
+            <img class="highlight--1" src="/images/blue-highlight.svg" alt="" />
+            <br />
+            who builds immersive and <br />
+            user-friendly applications.
+            <img class="highlight--2" src="/images/red-highlight.svg" alt="" />
+          </h1>
+          <p class="landing__desc">
+            Check out my progress, you can find me on
+            <a href="https://github.com/VladAvram232323?tab=repositories" target="_blank">GitHub</a>
+            /
+            <a href="https://www.linkedin.com/in/vlad-avram-74a724198/" target="_blank">LinkedIn</a
+            >, or just <a href="mailto:avramvlad61@gmail.com">send me an email</a> saying hi.
+          </p>
+        </div>
+        <div>
+          <img src="/images/illustration.svg" alt="" />
+        </div>
+      </section>
+
+      <section class="projects container">
+        <div class="project">
+          <div class="project__image">
+            <a href="https://symphonious-croquembouche-0e439b.netlify.app/" target="_blank"
+              ><img src="/images/calculator__app.png" alt="presentation"
+            /></a>
+          </div>
+
+          <div class="project__desc">
+            <h2 class="project__desc__title">Calculator App</h2>
+            <p class="project__desc__desc">
+              Simple calculator app made with vanilla JS. I implemented a theme switch button.
+            </p>
+            <div class="project__desc__flex">
+              <a
+                class="project__desc__view"
+                href="https://symphonious-croquembouche-0e439b.netlify.app/"
+                target="_blank"
+                >Visit Website</a
+              >
+              <a
+                class="project__desc__code"
+                href="https://github.com/VladAvram232323/Calculator-App"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project reverse">
+          <div class="project__desc">
+            <h2 class="project__desc__title">Infinite Scroll</h2>
+            <p class="project__desc__desc">
+              For this project I used Unsplash API and made an infinite scroll just like you see in
+              social media apps.
+            </p>
+            <div class="project__desc__flex">
+              <a
+                class="project__desc__view"
+                href="https://candid-dasik-ff0bce.netlify.app/"
+                target="_blank"
+                >Visit Website</a
+              >
+              <a
+                class="project__desc__code"
+                href="https://github.com/VladAvram232323/Infinite-Scroll/tree/main"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+
+          <div class="project__image">
+            <a href="https://candid-dasik-ff0bce.netlify.app/" target="_blank"
+              ><img src="/images/infinite_scroll.png" alt="presentation"
+            /></a>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project__image">
+            <a href="https://silver-bonbon-d37e69.netlify.app/" target="_blank"
+              ><img src="/images/landing_page.png" alt="presentation"
+            /></a>
+          </div>
+
+          <div class="project__desc">
+            <h2 class="project__desc__title">Landing Page</h2>
+            <p class="project__desc__desc">A simple landing page, but still in progress.</p>
+            <div class="project__desc__flex">
+              <a
+                class="project__desc__view"
+                href="https://silver-bonbon-d37e69.netlify.app/"
+                target="_blank"
+                >Visit Website</a
+              >
+              <a
+                class="project__desc__code"
+                href="https://github.com/VladAvram232323/fylo-landing-page"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about container">
+        <h2 class="about__title">About<img src="/images/boring.svg" alt="" /></h2>
+        <div class="even-columns">
+          <div>
+            <p>
+              I am a self-taught frontend developer. Currently student at Faculty of Electronics,
+              Telecommunications and Information Technology, located in Iași. I enjoy working in a
+              team, pushing each other to become the best version of ourselves.
+            </p>
+          </div>
+          <div>
+            <p>
+              When I’m not online, which happens quite rarely, because I’m really passionate about
+              tech, you can find be chilling with my friends and talking about gadgets, learning
+              about the latest updates in technology or playing video games. Tech related, I enjoy
+              minimalistic and clean stuff.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container">
+      <p class="contact">Send me <a href="mailto:avramvlad61@gmail.com">an email</a></p>
+      <p>&copy; <span id="copyright"></span> all rights reserved.</p>
+    </footer>
+
+    <script>
+      document
+        .getElementById("copyright")
+        .appendChild(document.createTextNode(new Date().getFullYear()));
+    </script>
+  </body>
+</html>

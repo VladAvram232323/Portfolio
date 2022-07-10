@@ -1,0 +1,184 @@
+// HEADER
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 13rem;
+  margin-bottom: 3rem;
+
+  &__logo {
+    font-weight: 700;
+    font-size: 3.5rem;
+  }
+}
+
+//
+
+// HERO
+
+.landing {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 9rem;
+  align-items: center;
+  margin-bottom: 35rem;
+
+  img {
+    width: 75%;
+    height: 80%;
+  }
+
+  &__title {
+    position: relative;
+    color: #131313;
+    font-size: 3.7rem;
+    line-height: 1.5em;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+  }
+
+  &__desc {
+    width: 70%;
+    color: #5a6065;
+    font-size: 2.2rem;
+    line-height: 1.5;
+  }
+
+  .highlight--1 {
+    width: fit-content;
+    height: 8rem;
+    position: absolute;
+    left: 45%;
+    top: -8%;
+  }
+
+  .highlight--2 {
+    position: absolute;
+    width: fit-content;
+    height: 2rem;
+    bottom: -10%;
+    left: 35%;
+  }
+}
+
+//
+
+// PROJECTS
+
+.project {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 12rem;
+  align-items: center;
+  margin-bottom: 25rem;
+
+  &__image {
+    img {
+      border-radius: 10px;
+      width: 100%;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+  }
+
+  &__image img:hover {
+    transform: scale(1.01);
+  }
+
+  &__desc {
+    width: 90%;
+
+    &__title {
+      color: #131313;
+      font-size: 3.4rem;
+      margin-bottom: 2rem;
+    }
+
+    &__desc {
+      color: #5a6065;
+      font-size: 2.2rem;
+      line-height: 1.4;
+      margin-bottom: 2.3rem;
+    }
+
+    &__flex {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    &__view,
+    &__code {
+      padding: 1.2rem 3rem;
+      border: none;
+      border-radius: 4rem;
+      outline: none;
+      color: #5a6065;
+      background-color: #edf2f5;
+      font-size: 1.7rem;
+      font-weight: 600;
+      transition: background-color 200ms ease;
+      text-decoration: none;
+    }
+
+    &__view:hover,
+    &__code:hover {
+      background-color: #dfe5e8;
+    }
+  }
+}
+
+.reverse {
+  grid-template-columns: 0.8fr 1.2fr;
+}
+
+//
+
+// ABOUT
+
+.about {
+  margin-top: 35rem;
+  margin-bottom: 20rem;
+}
+
+.about__title {
+  font-size: 3.8rem;
+  margin-bottom: 2.5rem;
+
+  img {
+    width: fit-content;
+  }
+}
+
+.even-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  gap: 12rem;
+
+  p {
+    color: #5a6065;
+    font-size: 2.2rem;
+    line-height: 1.4;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+  padding-bottom: 5rem;
+
+  .contact {
+    font-size: 3.8rem;
+    color: #131313;
+    font-weight: 500;
+
+    a {
+      color: #131313;
+    }
+  }
+
+  p {
+    color: #5a6065;
+  }
+}
